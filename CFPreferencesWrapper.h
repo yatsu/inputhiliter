@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface CFPreferencesWrapper_APEBeepMultiplier : NSObject
+@interface CFPreferencesWrapper_InputHiliter : NSObject
 {
     NSString *identifier;
 }

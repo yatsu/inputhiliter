@@ -52,7 +52,7 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1C5200D00D7831C700F7DD0D /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = Japanese; path = Japanese.lproj/APEInfo.rtfd; sourceTree = "<group>"; };
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		F5125073038BDCF301AA4DA5 /* InputHiliter.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = InputHiliter.c; sourceTree = "<group>"; };
+		F5125073038BDCF301AA4DA5 /* InputHiliter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = InputHiliter.c; sourceTree = "<group>"; };
 		F5125075038BDD0B01AA4DA5 /* InputHiliterController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = InputHiliterController.h; sourceTree = "<group>"; };
 		F5125076038BDD0B01AA4DA5 /* InputHiliterController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = InputHiliterController.m; sourceTree = "<group>"; };
 		F51250CA038BF76601AA4DA5 /* APETools.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = APETools.o; path = /Library/Frameworks/ApplicationEnhancer.framework/Versions/A/Libraries/APETools.o; sourceTree = "<absolute>"; };

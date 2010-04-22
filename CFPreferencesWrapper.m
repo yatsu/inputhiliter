@@ -1,9 +1,7 @@
-
 #import <Carbon/Carbon.h>
 #import "CFPreferencesWrapper.h"
 
-
-@implementation CFPreferencesWrapper_APEBeepMultiplier
+@implementation CFPreferencesWrapper_InputHiliter
 
 - initWithApplication:(NSString*)appIdentifier
 {
