@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {addYourOwnActionsHere = id; }; 
+            CLASS = BeepMultiplierController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"add_your_own_outlets_here" = id; window = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

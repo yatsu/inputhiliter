@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C5200CB0D78309E00F7DD0D /* APEInfo.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 1C5200CA0D78309E00F7DD0D /* APEInfo.rtfd */; };
+		F96D82740A2D14AB007F3AA7 /* InputHiliter.c in Sources */ = {isa = PBXBuildFile; fileRef = F5125073038BDCF301AA4DA5 /* InputHiliter.c */; };
+		F96D82760A2D14AB007F3AA7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B18A0401E36C2E01E2C3E6 /* Carbon.framework */; };
+		F96D82770A2D14AB007F3AA7 /* DesktopServicesPriv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AE041302D76A5101534080 /* DesktopServicesPriv.framework */; };
+		F96D82780A2D14AB007F3AA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F574113202F45276011A08DB /* Cocoa.framework */; };
+		F96D82790A2D14AB007F3AA7 /* ApplicationEnhancer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D3F9FC0305A40D01FE0BDE /* ApplicationEnhancer.framework */; };
+		F96D827A0A2D14AB007F3AA7 /* APETools.o in Frameworks */ = {isa = PBXBuildFile; fileRef = F51250CA038BF76601AA4DA5 /* APETools.o */; };
+		F96D828C0A2D14AC007F3AA7 /* CFPreferencesWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F56276B903796C8B01AA4DA5 /* CFPreferencesWrapper.h */; };
+		F96D828D0A2D14AC007F3AA7 /* InputHiliterController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5125075038BDD0B01AA4DA5 /* InputHiliterController.h */; };
+		F96D828F0A2D14AC007F3AA7 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		F96D82900A2D14AC007F3AA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		F96D82920A2D14AC007F3AA7 /* CFPreferencesWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F56276BA03796C8B01AA4DA5 /* CFPreferencesWrapper.m */; };
+		F96D82930A2D14AC007F3AA7 /* InputHiliterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5125076038BDD0B01AA4DA5 /* InputHiliterController.m */; };
+		F96D82950A2D14AC007F3AA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F574113202F45276011A08DB /* Cocoa.framework */; };
+		F96D82960A2D14AC007F3AA7 /* ApplicationEnhancer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D3F9FC0305A40D01FE0BDE /* ApplicationEnhancer.framework */; };
+		F96D82A10A2D14AC007F3AA7 /* APEManagerPrefPane.plugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = F96D829E0A2D14AC007F3AA7 /* APEManagerPrefPane.plugin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F96D829F0A2D14AC007F3AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F96D828A0A2D14AC007F3AA7;
+			remoteInfo = "APEManagerPrefPane (Upgraded)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F96D827B0A2D14AB007F3AA7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				F96D82A10A2D14AC007F3AA7 /* APEManagerPrefPane.plugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1C5200D00D7831C700F7DD0D /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = Japanese; path = Japanese.lproj/APEInfo.rtfd; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		F5125073038BDCF301AA4DA5 /* InputHiliter.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = InputHiliter.c; sourceTree = "<group>"; };
+		F5125075038BDD0B01AA4DA5 /* InputHiliterController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = InputHiliterController.h; sourceTree = "<group>"; };
+		F5125076038BDD0B01AA4DA5 /* InputHiliterController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = InputHiliterController.m; sourceTree = "<group>"; };
+		F51250CA038BF76601AA4DA5 /* APETools.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = APETools.o; path = /Library/Frameworks/ApplicationEnhancer.framework/Versions/A/Libraries/APETools.o; sourceTree = "<absolute>"; };
+		F56276B903796C8B01AA4DA5 /* CFPreferencesWrapper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CFPreferencesWrapper.h; sourceTree = "<group>"; };
+		F56276BA03796C8B01AA4DA5 /* CFPreferencesWrapper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CFPreferencesWrapper.m; sourceTree = "<group>"; };
+		F56276C20379923401AA4DA5 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = English; path = English.lproj/APEInfo.rtfd; sourceTree = "<group>"; };
+		F574113202F45276011A08DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		F5AE041302D76A5101534080 /* DesktopServicesPriv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DesktopServicesPriv.framework; path = /System/Library/PrivateFrameworks/DesktopServicesPriv.framework; sourceTree = "<absolute>"; };
+		F5B18A0401E36C2E01E2C3E6 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		F5CD5EAA02DAE61A01AA4DA5 /* Exports.exp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.exports; path = Exports.exp; sourceTree = "<group>"; };
+		F5D3F9FC0305A40D01FE0BDE /* ApplicationEnhancer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationEnhancer.framework; path = /Library/Frameworks/ApplicationEnhancer.framework; sourceTree = "<absolute>"; };
+		F96D82830A2D14AB007F3AA7 /* Info-APE_Module.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-APE_Module.plist"; sourceTree = "<group>"; };
+		F96D82840A2D14AC007F3AA7 /* InputHiliter.ape */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputHiliter.ape; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96D829D0A2D14AC007F3AA7 /* Info-APEManagerPrefPane.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-APEManagerPrefPane.plist"; sourceTree = "<group>"; };
+		F96D829E0A2D14AC007F3AA7 /* APEManagerPrefPane.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APEManagerPrefPane.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F96D82750A2D14AB007F3AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96D82760A2D14AB007F3AA7 /* Carbon.framework in Frameworks */,
+				F96D82770A2D14AB007F3AA7 /* DesktopServicesPriv.framework in Frameworks */,
+				F96D82780A2D14AB007F3AA7 /* Cocoa.framework in Frameworks */,
+				F96D82790A2D14AB007F3AA7 /* ApplicationEnhancer.framework in Frameworks */,
+				F96D827A0A2D14AB007F3AA7 /* APETools.o in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96D82940A2D14AC007F3AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96D82950A2D14AC007F3AA7 /* Cocoa.framework in Frameworks */,
+				F96D82960A2D14AC007F3AA7 /* ApplicationEnhancer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F96D82840A2D14AC007F3AA7 /* InputHiliter.ape */,
+				F96D829E0A2D14AC007F3AA7 /* APEManagerPrefPane.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PatchTest */ = {
+			isa = PBXGroup;
+			children = (
+				29B97315FDCFA39411CA2CEA /* Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F96D82830A2D14AB007F3AA7 /* Info-APE_Module.plist */,
+				F96D829D0A2D14AC007F3AA7 /* Info-APEManagerPrefPane.plist */,
+			);
+			name = PatchTest;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F5125073038BDCF301AA4DA5 /* InputHiliter.c */,
+				F5125076038BDD0B01AA4DA5 /* InputHiliterController.m */,
+				F5125075038BDD0B01AA4DA5 /* InputHiliterController.h */,
+				F56276BA03796C8B01AA4DA5 /* CFPreferencesWrapper.m */,
+				F56276B903796C8B01AA4DA5 /* CFPreferencesWrapper.h */,
+				F5CD5EAA02DAE61A01AA4DA5 /* Exports.exp */,
+				F51250CA038BF76601AA4DA5 /* APETools.o */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C5200CA0D78309E00F7DD0D /* APEInfo.rtfd */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5B18A0401E36C2E01E2C3E6 /* Carbon.framework */,
+				F5AE041302D76A5101534080 /* DesktopServicesPriv.framework */,
+				F574113202F45276011A08DB /* Cocoa.framework */,
+				F5D3F9FC0305A40D01FE0BDE /* ApplicationEnhancer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F96D826F0A2D14AB007F3AA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96D828B0A2D14AC007F3AA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96D828C0A2D14AC007F3AA7 /* CFPreferencesWrapper.h in Headers */,
+				F96D828D0A2D14AC007F3AA7 /* InputHiliterController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F96D826C0A2D14AB007F3AA7 /* APE Module */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F96D827E0A2D14AB007F3AA7 /* Build configuration list for PBXNativeTarget "APE Module" */;
+			buildPhases = (
+				F96D826F0A2D14AB007F3AA7 /* Headers */,
+				F96D82700A2D14AB007F3AA7 /* Resources */,
+				F96D82720A2D14AB007F3AA7 /* Sources */,
+				F96D82750A2D14AB007F3AA7 /* Frameworks */,
+				F96D827B0A2D14AB007F3AA7 /* CopyFiles */,
+				F96D827D0A2D14AB007F3AA7 /* ShellScript */,
+				44731C550D5F956200C2C708 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F96D82A00A2D14AC007F3AA7 /* PBXTargetDependency */,
+			);
+			name = "APE Module";
+			productInstallPath = "$(USER_LIBRARY_DIR)/Bundles";
+			productName = "Labels X";
+			productReference = F96D82840A2D14AC007F3AA7 /* InputHiliter.ape */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F96D828A0A2D14AC007F3AA7 /* APEManagerPrefPane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F96D82980A2D14AC007F3AA7 /* Build configuration list for PBXNativeTarget "APEManagerPrefPane" */;
+			buildPhases = (
+				F96D828B0A2D14AC007F3AA7 /* Headers */,
+				F96D828E0A2D14AC007F3AA7 /* Resources */,
+				F96D82910A2D14AC007F3AA7 /* Sources */,
+				F96D82940A2D14AC007F3AA7 /* Frameworks */,
+				F96D82970A2D14AC007F3AA7 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APEManagerPrefPane;
+			productInstallPath = "$(USER_LIBRARY_DIR)/Bundles";
+			productName = APEManagerPrefPane;
+			productReference = F96D829E0A2D14AC007F3AA7 /* APEManagerPrefPane.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = F96D82A20A2D14AC007F3AA7 /* Build configuration list for PBXProject "InputHiliter" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PatchTest */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F96D826C0A2D14AB007F3AA7 /* APE Module */,
+				F96D828A0A2D14AC007F3AA7 /* APEManagerPrefPane */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F96D82700A2D14AB007F3AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5200CB0D78309E00F7DD0D /* APEInfo.rtfd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96D828E0A2D14AC007F3AA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96D828F0A2D14AC007F3AA7 /* MainMenu.nib in Resources */,
+				F96D82900A2D14AC007F3AA7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		F96D82970A2D14AC007F3AA7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44731C550D5F956200C2C708 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -rf \"$USER_LIBRARY_DIR/Application Enhancers/$PRODUCT_NAME.$WRAPPER_EXTENSION\"\ncp -R \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION\" \"$USER_LIBRARY_DIR/Application Enhancers/\"";
+		};
+		F96D827D0A2D14AB007F3AA7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/Developer/Tools/SetFile -a B \"$TARGET_BUILD_DIR/$PRODUCT_NAME.$WRAPPER_EXTENSION\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F96D82720A2D14AB007F3AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96D82740A2D14AB007F3AA7 /* InputHiliter.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F96D82910A2D14AC007F3AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96D82920A2D14AC007F3AA7 /* CFPreferencesWrapper.m in Sources */,
+				F96D82930A2D14AC007F3AA7 /* InputHiliterController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F96D82A00A2D14AC007F3AA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F96D828A0A2D14AC007F3AA7 /* APEManagerPrefPane */;
+			targetProxy = F96D829F0A2D14AC007F3AA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1C5200CA0D78309E00F7DD0D /* APEInfo.rtfd */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F56276C20379923401AA4DA5 /* English */,
+				1C5200D00D7831C700F7DD0D /* Japanese */,
+			);
+			name = APEInfo.rtfd;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F96D827F0A2D14AB007F3AA7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc,
+					i386,
+				);
+				BUILD_STYLE = Development;
+				COPY_PHASE_STRIP = NO;
+				EXPORTED_SYMBOLS_FILE = Exports.exp;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = "Info-APE_Module.plist";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = InputHiliter;
+				SDKROOT = macosx10.5;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = ape;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		F96D82800A2D14AB007F3AA7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc,
+					i386,
+				);
+				BUILD_STYLE = Deployment;
+				COPY_PHASE_STRIP = YES;
+				EXPORTED_SYMBOLS_FILE = Exports.exp;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = "Info-APE_Module.plist";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = InputHiliter;
+				SDKROOT = macosx10.5;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = ape;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F96D82810A2D14AB007F3AA7 /* BuildStyle */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc,
+					i386,
+				);
+				BUILD_STYLE = BuildStyle;
+				EXPORTED_SYMBOLS_FILE = Exports.exp;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = "Info-APE_Module.plist";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Beep Multiplier";
+				SDKROOT = macosx10.5;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = ape;
+			};
+			name = BuildStyle;
+		};
+		F96D82820A2D14AB007F3AA7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc,
+					i386,
+				);
+				BUILD_STYLE = Default;
+				EXPORTED_SYMBOLS_FILE = Exports.exp;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = "Info-APE_Module.plist";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "Beep Multiplier";
+				SDKROOT = macosx10.5;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = ape;
+			};
+			name = Default;
+		};
+		F96D82990A2D14AC007F3AA7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_STYLE = Development;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-APEManagerPrefPane.plist";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = APEManagerPrefPane;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		F96D829A0A2D14AC007F3AA7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_STYLE = Deployment;
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-APEManagerPrefPane.plist";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = APEManagerPrefPane;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		F96D829B0A2D14AC007F3AA7 /* BuildStyle */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_STYLE = BuildStyle;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-APEManagerPrefPane.plist";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = APEManagerPrefPane;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = BuildStyle;
+		};
+		F96D829C0A2D14AC007F3AA7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_STYLE = Default;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "Info-APEManagerPrefPane.plist";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = APEManagerPrefPane;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Default;
+		};
+		F96D82A30A2D14AC007F3AA7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc,
+					i386,
+				);
+				BUILD_STYLE = Development;
+				GCC_VERSION = 4.2;
+				SDKROOT = macosx10.5;
+			};
+			name = Development;
+		};
+		F96D82A40A2D14AC007F3AA7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc,
+					i386,
+				);
+				BUILD_STYLE = Deployment;
+				GCC_VERSION = 4.2;
+				SDKROOT = macosx10.5;
+			};
+			name = Deployment;
+		};
+		F96D82A50A2D14AC007F3AA7 /* BuildStyle */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc,
+					i386,
+				);
+				BUILD_STYLE = BuildStyle;
+				GCC_VERSION = 4.2;
+				SDKROOT = macosx10.5;
+			};
+			name = BuildStyle;
+		};
+		F96D82A60A2D14AC007F3AA7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					ppc,
+					i386,
+				);
+				BUILD_STYLE = Default;
+				GCC_VERSION = 4.2;
+				SDKROOT = macosx10.5;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F96D827E0A2D14AB007F3AA7 /* Build configuration list for PBXNativeTarget "APE Module" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96D827F0A2D14AB007F3AA7 /* Development */,
+				F96D82800A2D14AB007F3AA7 /* Deployment */,
+				F96D82810A2D14AB007F3AA7 /* BuildStyle */,
+				F96D82820A2D14AB007F3AA7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F96D82980A2D14AC007F3AA7 /* Build configuration list for PBXNativeTarget "APEManagerPrefPane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96D82990A2D14AC007F3AA7 /* Development */,
+				F96D829A0A2D14AC007F3AA7 /* Deployment */,
+				F96D829B0A2D14AC007F3AA7 /* BuildStyle */,
+				F96D829C0A2D14AC007F3AA7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		F96D82A20A2D14AC007F3AA7 /* Build configuration list for PBXProject "InputHiliter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96D82A30A2D14AC007F3AA7 /* Development */,
+				F96D82A40A2D14AC007F3AA7 /* Deployment */,
+				F96D82A50A2D14AC007F3AA7 /* BuildStyle */,
+				F96D82A60A2D14AC007F3AA7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,64 @@
+InputHiliter
+============
+
+What is InputHiliter?
+---------------------
+
+InputHiliter extends the highlight of preediting text in Mac OS X Cocoa Applications.
+If you are using input programs like Kotoeri, you can recognize a conversion block easily.
+This feature can be set on per-application basis.
+InputHiliter is effective only to Cocoa text views.
+
+Note
+----
+
+With InputHiliter, some applications might not work normally.
+In this case, add these applications to the exclude list of APE Manager Preference Pane or disable InputHiliter itself.
+
+Requirement
+-----------
+
+	- Mac OS X 10.5 or 10.6
+	- Unsanity Application Enhancer 2.6 or newer
+	  - http://www.unsanity.com/haxies/ape/
+
+Install
+-------
+
+Click "InputHiliter Installer.app".
+
+Using InputHiliter
+------------------
+
+If you want to disable InputHiliter in a specific application, add the application to the exclude list of the APE Manager Preference Pane.
+
+Known Issues
+------------
+
+* If an application uses it's own customized text view, InputHiliter might not able to highlight preediting texts.
+
+Version History
+---------------
+
+* Version 2.1 (???)
+  * Support Mac OS X 10.6 (Snow Leopard)
+	* Support both 32bit and 64bit
+
+* Version 2.0 (March 1, 2008)
+	* Support Mac OS X 10.5 (Leopard)
+	* Compiled as a Universal Binary
+
+* Version 1.0.1 (March 10, 2005)
+  * Fixed memory leak bug
+
+* Version 1.0.0 (January 21, 2005)
+  * Initial release
+
+License Agreement
+-----------------
+
+InputHiliter is free and released under new BSD license.
+Use this software at your own risk.
+
+http://inputhiliter.yatsu.info/ (Japanese)
+
