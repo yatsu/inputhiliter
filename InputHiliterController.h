@@ -4,15 +4,15 @@
 
 @interface InputHiliterController : NSObject<APEManagerPrefPane>
 {
-  NSWindow *window;
+	NSWindow *window;
 
-  CFPreferencesWrapper_InputHiliter *prefs;
-  NSBundle * bundle;
+	CFPreferencesWrapper_InputHiliter *prefs;
+	NSBundle *bundle;
 
-  NSColorWell *activeForegroundWell;
-  NSColorWell *activeBackgroundWell;
-  NSColorWell *otherForegroundWell;
-  NSColorWell *otherBackgroundWell;
+	NSColorWell *activeForegroundWell;
+	NSColorWell *activeBackgroundWell;
+	NSColorWell *otherForegroundWell;
+	NSColorWell *otherBackgroundWell;
 }
 
 @property (nonatomic, retain) IBOutlet NSWindow *window;
@@ -23,8 +23,8 @@
 @property (nonatomic, retain) IBOutlet NSColorWell *otherForegroundWell;
 @property (nonatomic, retain) IBOutlet NSColorWell *otherBackgroundWell;
 
-- (id)initWithAPE:(NSBundle*)apeBundle andBundle:(NSBundle*)prefPaneBundle;
+- (id) initWithAPE:(NSBundle *)apeBundle andBundle:(NSBundle *)prefPaneBundle;
 
-- (IBAction)setColor:(id)sender;
+- (IBAction) setColor:(id)sender;
 
 @end
