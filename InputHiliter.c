@@ -41,14 +41,14 @@ static void *colors[] = { NULL, NULL, NULL, NULL };
 
 #define kActiveForeground 0
 #define kActiveBackground 1
-#define kOtherForeground  2
-#define kOtherBackground  3
+#define kInactiveForeground  2
+#define kInactiveBackground  3
 
 CFStringRef colorNames[] = {
 	CFSTR("activeForeground"),
 	CFSTR("activeBackground"),
-	CFSTR("otherForeground"),
-	CFSTR("otherBackground")
+	CFSTR("inactiveForeground"),
+	CFSTR("inactiveBackground")
 };
 
 CFStringRef defaultColors[] = {
@@ -135,9 +135,9 @@ void IH_NSTextView_setMarkedText_selectedRange_replacementRange(void *inObj, cha
 			switch (val) {
 				case 1:
 					CFDictionaryAddValue(mAttr, NSForegroundColorAttributeName,
-										 colors[kOtherForeground]);
+										 colors[kInactiveForeground]);
 					CFDictionaryAddValue(mAttr, NSBackgroundColorAttributeName,
-										 colors[kOtherBackground]);
+										 colors[kInactiveBackground]);
 					break;
 
 				case 2:
@@ -150,6 +150,7 @@ void IH_NSTextView_setMarkedText_selectedRange_replacementRange(void *inObj, cha
 			objc_msgSend(layoutManager,
 						 NSSelectorFromString(CFSTR("setTemporaryAttributes:forCharacterRange:")),
 						 mAttr, updateRange);
+			CFRelease(mAttr);
 		}
 
 		index = range.location + range.length;

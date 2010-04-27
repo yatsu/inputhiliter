@@ -11,8 +11,8 @@
 
 	NSColorWell *activeForegroundWell;
 	NSColorWell *activeBackgroundWell;
-	NSColorWell *otherForegroundWell;
-	NSColorWell *otherBackgroundWell;
+	NSColorWell *inactiveForegroundWell;
+	NSColorWell *inactiveBackgroundWell;
 }
 
 @property (nonatomic, retain) IBOutlet NSWindow *window;
@@ -20,8 +20,8 @@
 
 @property (nonatomic, retain) IBOutlet NSColorWell *activeForegroundWell;
 @property (nonatomic, retain) IBOutlet NSColorWell *activeBackgroundWell;
-@property (nonatomic, retain) IBOutlet NSColorWell *otherForegroundWell;
-@property (nonatomic, retain) IBOutlet NSColorWell *otherBackgroundWell;
+@property (nonatomic, retain) IBOutlet NSColorWell *inactiveForegroundWell;
+@property (nonatomic, retain) IBOutlet NSColorWell *inactiveBackgroundWell;
 
 - (id) initWithAPE:(NSBundle *)apeBundle andBundle:(NSBundle *)prefPaneBundle;
 

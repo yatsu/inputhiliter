@@ -9,17 +9,21 @@ If you are using input programs like Kotoeri, you can recognize a conversion blo
 This feature can be set on per-application basis.
 InputHiliter is effective only to Cocoa text views.
 
+![](http://farm4.static.flickr.com/3254/4556849341_1a7d30e0ec.jpg)
+
+![](http://farm4.static.flickr.com/3006/4557479054_7dd4cf6e54.jpg)
+
 Note
 ----
 
 With InputHiliter, some applications might not work normally.
-In this case, add these applications to the exclude list of APE Manager Preference Pane or disable InputHiliter itself.
+In this case, add these applications to the exclude list of Application Enhancer Preference Pane or disable InputHiliter itself.
 
 Requirement
 -----------
 
 	- Mac OS X 10.5 or 10.6
-	- Unsanity Application Enhancer 2.6 or newer
+	- Application Enhancer 2.6 or newer
 	  - http://www.unsanity.com/haxies/ape/
 
 Install
@@ -30,7 +34,7 @@ Click "InputHiliter Installer.app".
 Using InputHiliter
 ------------------
 
-If you want to disable InputHiliter in a specific application, add the application to the exclude list of the APE Manager Preference Pane.
+If you want to disable InputHiliter in a specific application, add the application to the exclude list of the Application Enhancer Preference Pane.
 
 Known Issues
 ------------
@@ -40,7 +44,7 @@ Known Issues
 Version History
 ---------------
 
-* Version 2.1 (???)
+* Version 3.0 (April 28, 2010)
   * Support Mac OS X 10.6 (Snow Leopard)
 	* Support both 32bit and 64bit
 
@@ -61,4 +65,7 @@ InputHiliter is free and released under new BSD license.
 Use this software at your own risk.
 
 http://inputhiliter.yatsu.info/ (Japanese)
+
+Uses Application Enhancer system,
+Copyright (c) 2002-2008, Unsanity LLC
 

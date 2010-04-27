@@ -10,22 +10,22 @@
 @synthesize bundle;
 @synthesize activeForegroundWell;
 @synthesize activeBackgroundWell;
-@synthesize otherForegroundWell;
-@synthesize otherBackgroundWell;
+@synthesize inactiveForegroundWell;
+@synthesize inactiveBackgroundWell;
 
 - (IBAction) setColor:(id)sender {
 	NSColor *color = [[(NSColorWell *) sender color] colorUsingColorSpaceName:NSCalibratedRGBColorSpace];
 
-	NSString *key;
+	NSString *key = nil;
 
 	if (sender == activeForegroundWell)
 		key = @"activeForeground";
 	else if (sender == activeBackgroundWell)
 		key = @"activeBackground";
-	else if (sender == otherForegroundWell)
-		key = @"otherForeground";
-	else if (sender == otherBackgroundWell)
-		key = @"otherBackground";
+	else if (sender == inactiveForegroundWell)
+		key = @"inactiveForeground";
+	else if (sender == inactiveBackgroundWell)
+		key = @"inactiveBackground";
 
 	NSString *str = [NSString stringWithFormat:@"%lf %lf %lf %lf",
 					 [color redComponent], [color greenComponent], [color blueComponent], [color alphaComponent]];
@@ -100,7 +100,7 @@
 	}
 	[activeBackgroundWell setColor:[NSColor colorWithCalibratedRed:red green:green blue:blue alpha:alpha]];
 
-	str = [prefs stringForKey:@"otherForeground"];
+	str = [prefs stringForKey:@"inactiveForeground"];
 	if (str) {
 		sscanf([str UTF8String], "%lf %lf %lf %lf", &red, &green, &blue, &alpha);
 	}
@@ -109,11 +109,11 @@
 		green = 0.298039;
 		blue = 0.298039;
 		alpha = 1.0;
-		[prefs setObject:[NSString stringWithFormat:@"%lf %lf %lf %lf", red, green, blue, alpha] forKey:@"otherForeground"];
+		[prefs setObject:[NSString stringWithFormat:@"%lf %lf %lf %lf", red, green, blue, alpha] forKey:@"inactiveForeground"];
 	}
-	[otherForegroundWell setColor:[NSColor colorWithCalibratedRed:red green:green blue:blue alpha:alpha]];
+	[inactiveForegroundWell setColor:[NSColor colorWithCalibratedRed:red green:green blue:blue alpha:alpha]];
 
-	str = [prefs stringForKey:@"otherBackground"];
+	str = [prefs stringForKey:@"inactiveBackground"];
 	if (str) {
 		sscanf([str UTF8String], "%lf %lf %lf %lf", &red, &green, &blue, &alpha);
 	}
@@ -121,9 +121,9 @@
 		red = 0.648860;
 		green = 0.792326;
 		blue = alpha = 1.0;
-		[prefs setObject:[NSString stringWithFormat:@"%lf %lf %lf %lf", red, green, blue, alpha] forKey:@"otherBackground"];
+		[prefs setObject:[NSString stringWithFormat:@"%lf %lf %lf %lf", red, green, blue, alpha] forKey:@"inactiveBackground"];
 	}
-	[otherBackgroundWell setColor:[NSColor colorWithCalibratedRed:red green:green blue:blue alpha:alpha]];
+	[inactiveBackgroundWell setColor:[NSColor colorWithCalibratedRed:red green:green blue:blue alpha:alpha]];
 
 	[prefs synchronize];
 	
@@ -136,8 +136,8 @@
 	[prefs release];
 	[activeForegroundWell release];
 	[activeBackgroundWell release];
-	[otherForegroundWell release];
-	[otherBackgroundWell release];
+	[inactiveForegroundWell release];
+	[inactiveBackgroundWell release];
 
 	[super dealloc];
 }
